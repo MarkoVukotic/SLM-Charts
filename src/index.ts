@@ -5,6 +5,13 @@ window.Webflow ||= [];
 window.Webflow.push(() => {
 
 
+
+
+
+
+  //Test commit
+
+
 //Area of little to no impact left chart -------------------------//
 
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
@@ -290,6 +297,8 @@ const chart_at_the_country_level = new Chart(at_the_country_level_ctx, config_at
 
 
 
+
+
 // Countries --- Austria Charts ------------------------------------//
 
 
@@ -298,6 +307,7 @@ const respondents_by_gener_austria_ctx = document.querySelector('[data-element="
   if (!respondents_by_gener_austria_ctx) return;
   
   const respondents_by_gender_austria_data = {
+
     labels: ['  Female  ', '  Male  ', '  Non-binary  ', '  Other  ', '  Prefer not to say  '],
     datasets: [
       {
