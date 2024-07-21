@@ -18,6 +18,8 @@ const data_area_of_little_to_no_impact = {
       data: ['46', '57', '80', '62', '55', '44'],
       borderColor: '#80C7BD',
       backgroundColor: transparentize('#80C7BD', 0.8),
+
+      
       order: 2
     },
     {
