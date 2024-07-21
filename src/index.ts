@@ -4,14 +4,6 @@ import { randomNumbers, transparentize, countries } from 'src/utils/utils.js';
 window.Webflow ||= [];
 window.Webflow.push(() => {
 
-
-
-
-
-
-  //Test commit
-
-
 //Area of little to no impact left chart -------------------------//
 
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
