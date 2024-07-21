@@ -3,6 +3,7 @@ import { randomNumbers, transparentize, countries } from 'src/utils/utils.js';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
+alert('123');
 
 //Area of little to no impact left chart -------------------------//
 
