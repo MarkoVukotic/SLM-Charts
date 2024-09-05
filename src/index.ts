@@ -8,7 +8,11 @@ window.Webflow.push(() => {
 //Area of little to no impact left chart -------------------------//
 
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
+console.log(area_of_little_to_no_impact_ctx);
+alert(area_of_little_to_no_impact_ctx)
 if (!area_of_little_to_no_impact_ctx) return;
+
+console.log(1);
 
 const labels_area_of_little_to_no_impact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200']
 const data_area_of_little_to_no_impact = {
