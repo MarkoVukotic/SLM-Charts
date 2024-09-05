@@ -7,6 +7,7 @@ window.Webflow.push(() => {
 
 //Area of little to no impact left chart -------------------------//
 
+alert(123);
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
 console.log(area_of_little_to_no_impact_ctx);
 alert(area_of_little_to_no_impact_ctx)
