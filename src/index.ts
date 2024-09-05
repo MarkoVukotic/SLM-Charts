@@ -337,6 +337,51 @@ const respondents_by_gener_austria_config = {
 const respondents_by_gener_austria_chart = new Chart(respondents_by_gener_austria_ctx, respondents_by_gener_austria_config);
 // Countries --- Respondents by Gender Austria Charts ------------------------------------//
 
+
+// Countries --- Austria Charts ------------------------------------//
+
+
+// Countries --- Respondents by Gender Austria Charts ------------------------------------//
+const test_ctx = document.querySelector('[data-element="test"]');
+  if (!test_ctx) return;
+  
+  const test_data = {
+
+    labels: ['  Female  ', '  Male  ', '  Non-binary  ', '  Other  ', '  Prefer not to say  '],
+    datasets: [
+      {
+        label: '  Respondents by gender',
+        data: [50.6, 47.2, 1.4, 0.03, 0.35],
+        backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const test_config = {
+  type: 'doughnut',
+  data: test_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by gender'
+      },
+      
+    }
+  },
+};
+const test_chart = new Chart(test_ctx, test_config);
+// Countries --- Respondents by Gender Austria Charts ------------------------------------//
+
+
 // Countries --- Respondents by Disability Austria Charts ------------------------------------//
 const respondents_by_disability_austria_ctx = document.querySelector('[data-element="respondents_by_disability_austria"]');
   if (!respondents_by_disability_austria_ctx) return;
