@@ -3,7 +3,7 @@ import { randomNumbers, transparentize, countries } from 'src/utils/utils.js';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-alert('123');
+
 
 //Area of little to no impact left chart -------------------------//
 
@@ -4550,3 +4550,60 @@ const chart5 = new Chart(ctx5, config5);
 // const chart6 = new Chart(ctx6, config6);
 //Chart 6 ------------------------------------------------------------------------------------------------------------------------------
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Countries --- Respondents by Accomodation type Austria Charts ------------------------------------//
+const respondents_by_undergraduate_year_of_study_austria_ctx = document.querySelector('[data-element="respondents_by_undergraduate_year_of_study_austria"]');
+  if (!respondents_by_undergraduate_year_of_study_austria_ctx) return;
+  
+  const respondents_by_undergraduate_year_of_study_austria_data = {
+    labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
+    datasets: [
+      {
+        label: '  Respondents by undergraduate year of study',
+        data: [37.4, 20.9, 18.9, 10.2, 12.6], 
+        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_undergraduate_year_of_study_austria_config = {
+  type: 'doughnut',
+  data: respondents_by_undergraduate_year_of_study_austria_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by undergraduate year of study'
+      },
+      
+    }
+  },
+};
+const respondents_by_undergraduate_year_of_study_austria_chart = new Chart(respondents_by_undergraduate_year_of_study_austria_ctx, respondents_by_undergraduate_year_of_study_austria_config);
+// Countries --- Respondents by Accomodation type Austria Charts ------------------------------------//
+
+// Countries --- Austria Charts ------------------------------------//
